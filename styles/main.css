@@ -1,165 +1,192 @@
 * {
-    margin: 0;
-    font-family: 'Rubik', sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  font-family: 'Rubik', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 /* mediaqueries plantilla
 
-body {
-}
-
 @media only screen and (min-width: 768px) {
-    body {
-    }
+  body {
+  }
 }
 
 @media only screen and (min-width: 1200px) {
-    body {
-    }
+  body {
+  }
 }*/
 
 /*estilos header*/
 
-header {
-}
-
 .headerContainerMobile {
-    display: flex;
-    flex-direction: column;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .headerContainerTabletDesktop {
-    display: none;
+  display: none;
 }
 
 .headerLogoAndName {
-    margin: 25px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  margin: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .bandLogo {
-    width: 100px;
+  width: 100px;
 }
 
 .mainTitle {
-    font-family: 'Fredoka one', sans-serif;
-    color: #ffa500;
-    font-size: 32px;
+  font-family: 'Fredoka one', sans-serif;
+  color: #ffa500;
+  font-size: 32px;
 }
 
 .headerNav {
-    padding: 20px 0;
-    background-color: pink;
+  padding: 20px 0;
+  background-color: pink;
 }
 
 .navList {
-    margin: 0 25px;
-    padding: 0;
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.listItem {
+  margin: 0 25px;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .navLink {
-    color: white;
-    text-decoration: none;
+  color: white;
+  text-decoration: none;
 }
 
 @media only screen and (min-width: 768px) {
-    .headerContainerMobile {
-        display: none;
-    }
+  .headerContainerMobile {
+    display: none;
+  }
 
-    .headerContainerTabletDesktop {
-        display: flex;
-        flex-direction: column;
-    }
+  .headerContainerTabletDesktop {
+    display: flex;
+    flex-direction: column;
+  }
 
-    .headerLogoAndNav {
-        display: initial;
-        background-color: pink;
-    }
+  .headerLogoAndNav {
+    display: initial;
+    background-color: pink;
+  }
 
-    .centeringDiv {
-        padding: 25px 48px;
-        display: flex;
-        align-items: center;
-        flex-direction: row;
-        justify-content: space-between;
-        margin: 0 auto;
-    }
+  .centeringDiv {
+    padding: 25px 48px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
 
-    .headerNav {
-        width: 50%;
-        padding: 0;
-    }
+  .headerNav {
+    width: 50%;
+    padding: 0;
+  }
 
-    .navList {
-        margin: 0;
-    }
+  .navList {
+    margin: 0;
+  }
 
-    .mainTitle {
-        margin: 0 auto;
-        padding: 10px 0;
-    }
+  .mainTitle {
+    margin: 0 auto;
+    padding: 10px 0;
+  }
 }
 
 @media only screen and (min-width: 1200px) {
-    .centeringDiv {
-        max-width: 1120px;
-    }
+  .centeringDiv {
+    max-width: 1120px;
+  }
 }
 
 /*estilos main*/
 
-main {
-    background-color: darkseagreen;
+.mainContainer {
+  margin: 0 25px;
 }
 
-.mainContainer {
-    margin: 0 25px;
+.mainImageContainer {
+  text-align: center;
 }
 
 @media only screen and (min-width: 768px) {
-    .mainContainer {
-        margin: 0 48px;
-    }
+  .mainContainer {
+    margin: 0 48px;
+  }
 }
 
 @media only screen and (min-width: 1200px) {
-    .mainContainer {
-        margin: 0 auto;
-        max-width: 1120px;
-    }
+  .mainContainer {
+    margin: 0 auto;
+    max-width: 1120px;
+  }
 }
 
 /*estilos footer*/
 
-footer {
-    background-color: lightcoral;
+.footerContainerMobile {
+  margin-top: 45px;
+  background-color: pink;
+  justify-content: center;
+  padding: 30px 0;
+  text-align: center;
 }
 
-.footerContainer {
-    margin: 0 25px;
+.footerContainerTabletDesktop {
+  display: none;
 }
+
+.item1 {
+  color: white;
+  margin-bottom: 20px;
+}
+
+.footerNavList {
+  padding: 0;
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+.footerNavLink {
+  text-decoration: none;
+  color: white;
+}
+
+.footerbandLogo {
+  width: 70px;
+}
+
 
 @media only screen and (min-width: 768px) {
-    .footerContainer {
-        margin: 0 48px;
-    }
+  .footerContainerMobile {
+    display: none
+  }
+
+  .footerContainerTabletDesktop {
+    display: flex;
+    margin-top: 45px;
+    background-color: pink;
+    justify-content: space-between;
+    padding: 30px 48px;
+    align-items: center;
+  }
+
+  .footerNavList {
+    margin-bottom: 0;
+  }
 }
 
 @media only screen and (min-width: 1200px) {
-    .footerContainer {
-        margin: 0 auto;
-        max-width: 1120px;
-    }
+
 }
