@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    font-family: 'Rubik', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* mediaqueries plantilla
+
+body {
+}
+
+@media only screen and (min-width: 768px) {
+    body {
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    body {
+    }
+}*/
+
+/*estilos header*/
+
+header {
+}
+
+.headerContainerMobile {
+    display: flex;
+    flex-direction: column;
+}
+
+.headerContainerTabletDesktop {
+    display: none;
+}
+
+.headerLogoAndName {
+    margin: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bandLogo {
+    width: 100px;
+}
+
+.mainTitle {
+    font-family: 'Fredoka one', sans-serif;
+    color: #ffa500;
+    font-size: 32px;
+}
+
+.headerNav {
+    padding: 20px 0;
+    background-color: pink;
+}
+
+.navList {
+    margin: 0 25px;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.listItem {
+}
+
+.navLink {
+    color: white;
+    text-decoration: none;
+}
+
+@media only screen and (min-width: 768px) {
+    .headerContainerMobile {
+        display: none;
+    }
+
+    .headerContainerTabletDesktop {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .headerLogoAndNav {
+        display: initial;
+        background-color: pink;
+    }
+
+    .centeringDiv {
+        padding: 25px 48px;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 0 auto;
+    }
+
+    .headerNav {
+        width: 50%;
+        padding: 0;
+    }
+
+    .navList {
+        margin: 0;
+    }
+
+    .mainTitle {
+        margin: 0 auto;
+        padding: 10px 0;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .centeringDiv {
+        max-width: 1120px;
+    }
+}
+
+/*estilos main*/
+
+main {
+    background-color: darkseagreen;
+}
+
+.mainContainer {
+    margin: 0 25px;
+}
+
+@media only screen and (min-width: 768px) {
+    .mainContainer {
+        margin: 0 48px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .mainContainer {
+        margin: 0 auto;
+        max-width: 1120px;
+    }
+}
+
+/*estilos footer*/
+
+footer {
+    background-color: lightcoral;
+}
+
+.footerContainer {
+    margin: 0 25px;
+}
+
+@media only screen and (min-width: 768px) {
+    .footerContainer {
+        margin: 0 48px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .footerContainer {
+        margin: 0 auto;
+        max-width: 1120px;
+    }
+}
