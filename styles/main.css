@@ -5,6 +5,17 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+html {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  position: relative;
+  min-height: 100vh;
+  padding-bottom: 228px;
+}
+
 /* mediaqueries plantilla
 
 @media only screen and (min-width: 768px) {
@@ -99,8 +110,9 @@
   }
 
   .mainTitle {
+    font-size: 55px;
     margin: 0 auto;
-    padding: 10px 0;
+    padding: 20px 0;
   }
 }
 
@@ -120,9 +132,32 @@
   text-align: center;
 }
 
+.presentationText, .bandcampText {
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  margin: 40px 0;
+}
+
+.mainBandcamp {
+  text-align: center;
+  margin-bottom: 140px;
+}
+
 @media only screen and (min-width: 768px) {
   .mainContainer {
     margin: 0 48px;
+  }
+
+  .mainBandPresentation, .bandcampText {
+    color:
+    line-height: 24px;
+    font-size: 24px;
+    margin: 40px 0;
+  }
+
+  .mainBandcamp {
+    margin-bottom: 70px;
   }
 }
 
@@ -135,8 +170,13 @@
 
 /*estilos footer*/
 
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
 .footerContainerMobile {
-  margin-top: 45px;
   background-color: pink;
   justify-content: center;
   padding: 30px 0;
@@ -170,23 +210,33 @@
 
 @media only screen and (min-width: 768px) {
   .footerContainerMobile {
-    display: none
+    display: none;
   }
 
   .footerContainerTabletDesktop {
     display: flex;
-    margin-top: 45px;
+    margin-top: 70px;
     background-color: pink;
+  }
+
+  .footerCenteringDiv {
+    display: flex;
     justify-content: space-between;
     padding: 30px 48px;
     align-items: center;
+    width: 100%;
   }
 
   .footerNavList {
     margin-bottom: 0;
+    text-align: right;
   }
 }
 
 @media only screen and (min-width: 1200px) {
-
+  .footerCenteringDiv {
+    margin: 0 auto;
+    padding: 30px 0;
+    max-width: 1120px;
+  }
 }
