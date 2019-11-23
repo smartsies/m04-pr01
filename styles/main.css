@@ -125,7 +125,7 @@ body {
 /*estilos main*/
 
 .mainContainer {
-  margin: 0 25px;
+  margin: 40px 25px 140px 25px;
 }
 
 .mainImageContainer {
@@ -133,27 +133,34 @@ body {
 }
 
 .presentationText, .bandcampText {
-  text-align: center;
+  color: darkslategrey;
   font-family: 'Montserrat', sans-serif;
-  font-weight: 500;
+  line-height: 24px;
   margin: 40px 0;
 }
 
 .mainBandcamp {
   text-align: center;
-  margin-bottom: 140px;
 }
 
 @media only screen and (min-width: 768px) {
   .mainContainer {
-    margin: 0 48px;
+    margin: 40px 48px 70px 48px;
   }
 
-  .mainBandPresentation, .bandcampText {
-    color:
-    line-height: 24px;
+  .mainFlexContainer {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .mainFlexContainer section {
+    width: 45%;
+  }
+
+  .presentationText, .bandcampText {
     font-size: 24px;
-    margin: 40px 0;
   }
 
   .mainBandcamp {
@@ -165,6 +172,10 @@ body {
   .mainContainer {
     margin: 0 auto;
     max-width: 1120px;
+  }
+
+  .mainImageContainer {
+    margin-top: 40px;
   }
 }
 
