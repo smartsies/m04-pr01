@@ -129,16 +129,75 @@ body {
   margin: 40px 25px 140px 25px;
 }
 
+.bandMember {
+  margin-bottom: 70px;
+}
+
+.memberImage {
+  width: 100%;
+  height: auto;
+}
+
+.memberText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.memberName {
+  width: 100%;
+  font-family: 'Fredoka one', sans-serif;
+  background: linear-gradient(to right, pink, orange);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+  font-size: 32px;
+}
+
+.memberDescription {
+  color: darkslategrey;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 24px;
+  font-size: 24px;
+}
+
 @media only screen and (min-width: 768px) {
   .mainContainer {
     margin: 40px 48px 70px 48px;
+  }
+
+  .bandMember {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .reverse {
+    flex-direction: row-reverse;
+    text-align: right;
+  }
+
+  .imageContainer {
+    width: 45%;
+  }
+
+  .memberText {
+    width: 45%;
+  }
+
+  .memberDescription {
+    font-size: 32px;
   }
 }
 
 @media only screen and (min-width: 1200px) {
   .mainContainer {
+    padding-top: 40px;
     margin: 0 auto;
     max-width: 1120px;
+  }
+
+  .memberDescription, .memberName {
+    font-size: 44px;
   }
 }
 
