@@ -6,6 +6,7 @@
     <link href="https://fonts.googleapis.com/css?family=Rubik:500,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Fredoka+One&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/bb9778caa0.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="../styles/pages/contact.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
@@ -42,7 +43,50 @@
     </header>
     
       <main class="mainContainer">
-        CONTACT PAGE
+        <section>
+          <div class="contactSection">
+            <div class="rrss">
+                <p class="formText">
+                  Puedes seguirnos en
+                </p>
+                <div class="rssLogosContainer">
+                  <a href="https://www.instagram.com/somoslasmorsas/" target="_blank"><i class="fab fa-instagram"></i></a>
+                  <a href="https://www.facebook.com/somoslasmorsas/" target="_blank"><i class="fab fa-facebook-square"></i></a>
+                  <a href="https://lasmorsas.bandcamp.com/" target="_blank"><i class="fab fa-bandcamp"></i></a>
+                </div>
+            </div>
+            <div class="ourEmail">
+              <p class="formText">
+                o escribirnos a
+              </p>
+              <p class="emailText">
+                lasmorsasband@gmail.com
+              </p>
+            </div>
+          </div>
+        </section>
+        <section class="formSection">
+          <div class="contactForm">
+            <p class="formText">
+              También puedes contactarnos a través de este formulario:
+            </p>
+            <form class="form" method="post">
+              <div class="nameField">
+                <input class="formElement" id="name" type="text" name="name" placeholder="Nombre" required>
+              </div>
+              <div class="mailField">
+                <input class="formElement" id="mail" type="mail" name="mail" placeholder="nombre.apellido@mail.com" required>
+              </div>
+              <div class="textField">
+                <textarea class="formElement textArea" id="msg" name="msg" placeholder="¿Qué necesitas?"rows="4" required></textarea>
+              </div>
+              <div class="sendButton">
+                <input class="submitButton" type="submit" value="Enviar" onClick="alert('¡Enviado!')">
+              </div>
+              </div>
+            </form>
+          </div>
+        </section>
       </main>
 
       <footer>

@@ -129,14 +129,98 @@ body {
   margin: 40px 25px 140px 25px;
 }
 
+.rssLogosContainer {
+  display: flex;
+  max-width: 200px;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding-bottom: 40px;
+}
+
+.fab {
+  color: orange;
+  font-size: 40px;
+}
+
+.emailText {
+  width: 100%;
+  color: orange;
+  font-family: 'Fredoka one', sans-serif;
+  font-size: 24px;
+  padding-bottom: 60px;
+  text-align: center;
+}
+
+.formText {
+  color: darkslategrey;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 24px;
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.formElement {
+  width: 100%;
+  border: 1px solid orange;
+  color: darkslategrey;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.submitButton {
+  color: white;
+  background: linear-gradient(to right,orange, pink);
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  font-family: 'Fredoka one', sans-serif;
+  font-size: 16px;
+}
+
+.sendButton {
+  text-align: right;
+}
+
 @media only screen and (min-width: 768px) {
   .mainContainer {
     margin: 40px 48px 70px 48px;
+  }
+
+  .contactSection {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .rrss, .ourEmail {
+    width: 45%;
+  }
+
+  .form {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  .formElement {
+    margin: 0;
+  }
+
+  .textField {
+    grid-column: 1 / 3;
+  }
+
+  .sendButton {
+    grid-column: 2 / 3;
+    justify-content: right;
   }
 }
 
 @media only screen and (min-width: 1200px) {
   .mainContainer {
+    padding-top: 40px;
     margin: 0 auto;
     max-width: 1120px;
   }
