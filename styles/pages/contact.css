@@ -1,0 +1,216 @@
+* {
+  margin: 0;
+  font-family: 'Rubik', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  position: relative;
+  min-height: 100vh;
+  padding-bottom: 228px;
+}
+
+/* mediaqueries plantilla
+
+@media only screen and (min-width: 768px) {
+  body {
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  body {
+  }
+}*/
+
+/*estilos header*/
+
+.headerContainerMobile {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.headerContainerTabletDesktop {
+  display: none;
+}
+
+.headerLogoAndName {
+  margin: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.bandLogo {
+  width: 100px;
+}
+
+.mainTitle {
+  font-family: 'Fredoka one', sans-serif;
+  color: #ffa500;
+  font-size: 32px;
+}
+
+.headerNav {
+  padding: 20px 0;
+  background: linear-gradient(to right,orange, pink);
+}
+
+.navList {
+  margin: 0 25px;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.navLink {
+  color: white;
+  text-decoration: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .headerContainerMobile {
+    display: none;
+  }
+
+  .headerContainerTabletDesktop {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .headerLogoAndNav {
+    display: initial;
+    background: linear-gradient(to right,orange, pink);
+  }
+
+  .centeringDiv {
+    padding: 25px 48px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+
+  .headerNav {
+    background: none;
+    width: 50%;
+    padding: 0;
+  }
+
+  .navList {
+    margin: 0;
+  }
+
+  .mainTitle {
+    font-size: 55px;
+    margin: 0 auto;
+    padding: 20px 0;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .centeringDiv {
+    max-width: 1120px;
+  }
+}
+
+/*estilos main*/
+
+.mainContainer {
+  margin: 40px 25px 140px 25px;
+}
+
+@media only screen and (min-width: 768px) {
+  .mainContainer {
+    margin: 40px 48px 70px 48px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .mainContainer {
+    margin: 0 auto;
+    max-width: 1120px;
+  }
+}
+
+/*estilos footer*/
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.footerContainerMobile {
+  background-color: pink;
+  justify-content: center;
+  padding: 30px 0;
+  text-align: center;
+}
+
+.footerContainerTabletDesktop {
+  display: none;
+}
+
+.item1 {
+  color: white;
+  margin-bottom: 20px;
+}
+
+.footerNavList {
+  padding: 0;
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+.footerNavLink {
+  text-decoration: none;
+  color: white;
+}
+
+.footerbandLogo {
+  width: 70px;
+}
+
+
+@media only screen and (min-width: 768px) {
+  .footerContainerMobile {
+    display: none;
+  }
+
+  .footerContainerTabletDesktop {
+    display: flex;
+    margin-top: 70px;
+    background-color: pink;
+  }
+
+  .footerCenteringDiv {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 48px;
+    align-items: center;
+    width: 100%;
+  }
+
+  .footerNavList {
+    margin-bottom: 0;
+    text-align: right;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .footerCenteringDiv {
+    margin: 0 auto;
+    padding: 30px 0;
+    max-width: 1120px;
+  }
+}
