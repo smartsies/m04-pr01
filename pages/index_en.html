@@ -6,8 +6,7 @@
     <link href="https://fonts.googleapis.com/css?family=Rubik:500,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Fredoka+One&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/bb9778caa0.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" type="text/css" href="../styles/pages/contact.css">
+    <link rel="stylesheet" type="text/css" href="../styles/home.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
@@ -15,7 +14,7 @@
       <div class="headerContainerMobile">
         <div class="headerLogoAndName">
           <a href="index_en.html"><img class="bandLogo" src="../images/lasmorsas_logo_orange.svg" alt="logotipo de Las Morsas"/></a>
-          <a href="../index.html" style="color:orange; text-decoration: none;">switch to ES</a>
+          <a class="navLink" href="../index.html" style="color:orange; text-decoration: none;">switch to ES</a>
           <p class="mainTitle">LAS MORSAS</p>
         </div>
         <nav class="headerNav">
@@ -46,49 +45,29 @@
     
       <main class="mainContainer">
         <section>
-          <div class="contactSection">
-            <div class="rrss">
-                <p class="formText">
-                  Follow us on
+          <div class="mainImageContainer">
+            <img src="../images/home_image.jpg" alt="band picture" style="margin: 0 auto; width: 100%; max-width: 1120px; height: auto">
+          </div>
+        </section>
+          <div class="mainFlexContainer">
+            <section>
+              <div class="mainBandPresentation">
+                <p class="presentationText">
+                  Do you like serious, technical, authoritarian, ambitious, conceptual, epic, professional, compact, blunt and seamless groups? We don't like them either. LOS MORSAS come from Madrid to tell us about their daily conflicts and their shouting political-philosophical opinions. Primitive and essential punk falling down the stairs. 
                 </p>
-                <div class="rssLogosContainer">
-                  <a href="https://www.instagram.com/somoslasmorsas/" target="_blank"><i class="fab fa-instagram"></i></a>
-                  <a href="https://www.facebook.com/somoslasmorsas/" target="_blank"><i class="fab fa-facebook-square"></i></a>
-                  <a href="https://lasmorsas.bandcamp.com/" target="_blank"><i class="fab fa-bandcamp"></i></a>
-                </div>
-            </div>
-            <div class="ourEmail">
-              <p class="formText">
-                or write us to
-              </p>
-              <p class="emailText">
-                lasmorsasband@gmail.com
-              </p>
-            </div>
+              </div>
+            </section>
+            <section>
+              <div class="mainBandcamp">
+                <p class="bandcampText">
+                  Listen to us!
+                </p>
+                <a class="bandcampLink" href="https://lasmorsas.bandcamp.com/" target="_blank">
+                  <img src="../images/tape_image.png" alt="bandcamp access image" style="width: 100%; max-width: 400px; height: auto">
+                </a>
+              </div>
+            </section>
           </div>
-        </section>
-        <section class="formSection">
-          <div class="contactForm">
-            <p class="formText">
-              You can contact us trough this form too:
-            </p>
-            <form class="form" method="post">
-              <div class="nameField">
-                <input class="formElement" id="name" type="text" name="name" placeholder="Name" required>
-              </div>
-              <div class="mailField">
-                <input class="formElement" id="mail" type="mail" name="mail" placeholder="name.surname@mail.com" required>
-              </div>
-              <div class="textField">
-                <textarea class="formElement textArea" id="msg" name="msg" placeholder="What do you need?"rows="4" required></textarea>
-              </div>
-              <div class="sendButton">
-                <input class="submitButton" type="submit" value="Send" onClick="alert('Sent!')">
-              </div>
-              </div>
-            </form>
-          </div>
-        </section>
       </main>
 
       <footer>
@@ -122,9 +101,9 @@
             <div>
               <nav>
                 <ul class="footerNavList">
-                  <li><a class="footerNavLink" href="theband_en.html">THE BAND</a></li>
-                  <li><a class="footerNavLink" href="who_en.html">WHO WE ARE</a></li>
-                  <li><a class="footerNavLink" href="contact_en.html">CONTACT US</a></li>
+                  <li><a class="footerNavLink" href="../pages/theband_en.html">THE BAND</a></li>
+                  <li><a class="footerNavLink" href="../pages/who_en.html">WHO WE ARE</a></li>
+                  <li><a class="footerNavLink" href="../pages/contact_en.html">CONTACT US</a></li>
                 </ul>
               </nav>
             </div>
